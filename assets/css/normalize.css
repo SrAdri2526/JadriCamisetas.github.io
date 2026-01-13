@@ -1,0 +1,31 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: red;
+}
+
+header {
+    width: 100%;
+    min-height: 10vh;
+    background-color: blue;
+}
+
+main {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: blue;
+    width: 100%;
+    min-height: 10vh;
+}
