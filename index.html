@@ -63,7 +63,67 @@
     </header>
 
     <aside>
+      
+      <section class="widget">
+        <div class="widget-title">
+            <i class="bi bi-tag"></i>
+            <h3>Categorías</h3>
+        </div>
         
+
+        <div class="filter-option">
+          <input type="checkbox" id="cat1" />
+          <label for="cat1">Red</label>
+        </div>
+
+        <div class="filter-option">
+          <input type="checkbox" id="cat2" />
+          <label for="cat2">PC</label>
+        </div>
+
+        <div class="filter-option">
+          <input type="checkbox" id="cat3" />
+          <label for="cat3">Periférico</label>
+        </div>
+
+        <div class="filter-option">
+          <input type="checkbox" id="cat4" />
+          <label for="cat4">Herramienta</label>
+        </div>
+      </section>
+
+      <section class="widget">
+        <div class="widget-title">
+            <i class="bi bi-coin"></i>
+            <h3>Presupuesto Máximo</h3>
+        </div>
+        
+
+        <div class="price-filter">
+          <input
+            type="range"
+            id="price-range"
+            name="price"
+            min="0"
+            max="3000"
+            step="5"
+            
+          />
+          <p>Precio: <span id="valor-seleccionado">500</span>€</p>
+        </div>
+      </section>
+
+      <section class="widget rss-container">
+        <div class="widget-title">
+            <i class="bi bi-envelope"></i>
+            <h3>¡No te pierdas nada!</h3>
+        </div>
+        
+        <p>Suscríbete para recibir ofertas exclusivas.</p>
+        <input type="email" placeholder="Tu email..." />
+        <button>Unirse</button>
+      </section>
+
     </aside>
 
     <main>
