@@ -2,16 +2,57 @@ const products = [
     {
         name: "AC Milan 1a Equipación 24/25",
         category: "Serie A",
-        price: 20.00,
+        price: 50.00,
         img_url: "https://m.media-amazon.com/images/I/514pgSou8DL._AC_UL320_.jpg"
     },
     {
         name: "Real Madrid 25/26 1a Equipación",
         category: "LaLiga",
-        price: 20.00,
+        price: 100.00,
         img_url: "https://m.media-amazon.com/images/I/51bs6Ahd8jL._AC_UL320_.jpg"
+    },
+    {
+        name: "Camiseta entrenamiento España",
+        category: "Selecciones",
+        price: 20.00,
+        img_url: "https://m.media-amazon.com/images/I/41TmEky9MYL._AC_UL320_.jpg"
+    },
+    {
+        name: "Atletico de Madrid 3a Equipación 25/26",
+        category: "LaLiga",
+        price: 70.00,
+        img_url: "https://m.media-amazon.com/images/I/51jb74u9UYL._AC_UL320_.jpg"
+    },
+    {
+        name: "Manchester City 1a Equipación 25/26",
+        category: "Premier League",
+        price: 95.00,
+        img_url: "https://m.media-amazon.com/images/I/61ANvWQuesL._AC_UL320_.jpg"
+    },
+    {
+        name: "Manchester United 1a Equipación 25/26",
+        category: "Premier League",
+        price: 60.00,
+        img_url: "https://m.media-amazon.com/images/I/61sLy1hu3sL._AC_SX679_.jpg"
+    },
+    {
+        name: "Arsenal 1a Equipación 25/26",
+        category: "Premier League",
+        price: 80.00,
+        img_url: "fotos/arsenal.png"
+    },
+    {
+        name: "Brazil x Stussy",
+        category: "Selecciones",
+        price: 300.00,
+        img_url: "https://camisfutgol.com/wp-content/uploads/2025/06/d9df4568-34d2-423f-9ff7-758ea80ad149.jpeg"
+    },
+    {
+        name: "RCD Mallorca 1998/1999",
+        category: "Retro",
+        price: 40.00,
+        img_url: "https://sportclubmemories.com/wp-content/uploads/2025/01/Image-51-fotor-202501311640-scaled.jpg"
     }
-
 ];
 
 /**
