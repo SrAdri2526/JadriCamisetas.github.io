@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,4 +11,37 @@
 .imagen2 img {
     width: 100%;
     border-radius: 10px;
+=======
+img {
+            width: 200px;
+            float: right;
+            margin-left: 20px;
+}
+
+.contenedor {
+            width: 100px;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 
+            "texto1 imagen1"
+            "imagen2 texto2";
+            padding: 5px;
+            gap: 5px;
+}
+
+        .texto1{
+            grid-area: texto1;
+}
+
+.imagen1{
+            grid-area: imagen1;
+}
+
+        .texto2{
+            grid-area: texto2;
+}
+
+.imagen2{
+            grid-area: imagen2;
+>>>>>>> 96e1e4ce02fddab5296d044fbeff3adedfe286d5
 }
