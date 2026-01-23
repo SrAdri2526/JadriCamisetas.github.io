@@ -1,0 +1,8 @@
+.aviso_legal{
+    width: 100%;
+    font-size: large;
+    outline: solid black 1px;
+    background-color: #F8FAFC;
+    padding: 1rem;
+    box-shadow: none;
+}

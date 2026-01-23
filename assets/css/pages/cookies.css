@@ -1,0 +1,8 @@
+.cookies{
+    width: 100%;
+    font-size: large;
+    outline: solid black 1px;
+    background-color: #f3f4f6;
+    padding: 1rem;
+    box-shadow: none;
+}
