@@ -1,11 +1,12 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Texto a la izquierda, imágenes a la derecha */
+    grid-template-columns: 1fr 1fr; /* Texto a la izquierda, imágenes a la derecha */
     gap: 30px;
-    max-width: 1700px;
+    max-width: 1200px;
     margin: 0 auto;
-    height: 50px;
+    padding: 20px;
+    height: auto;
 }
 
 .text-section {
@@ -26,10 +27,13 @@
     color: #555;
 }
 
+/* Contenedor de imágenes - ahora como parte del grid principal */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas para imágenes */
-    gap: 20px;
+    grid-template-columns: repeat(1fr); /* 2 columnas */
+    grid-template-rows: repeat(1fr); /* 2 filas */
+    gap: 15px;
+    height: fit-content;
 }
 
 .image-item {
@@ -46,17 +50,8 @@
 
 .image-item img {
     width: 100%;
-    height: 350px;
-    object-fit: cover; /* Ajusta la imagen sin distorsionar */
-}
-
-.image-item p {
-    padding: 15px;
-    margin: 0;
-    text-align: center;
-    background-color: #0077cc;
-    color: rgb(249, 0, 0);
-    font-weight: bold;
+    height: 400px; /* Altura fija para uniformidad */
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
 }
 
 /* Responsive: en pantallas pequeñas, una sola columna */
@@ -67,6 +62,6 @@
     
     .image-grid {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 }
-
