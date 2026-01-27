@@ -58,7 +58,7 @@
     </header>
 
     <aside>
-              <h2>TENDENCIAS</h2>
+        <h2>TENDENCIAS</h2>
         <ul>
             <li>Los mas vendidos</li>
             <br>
@@ -84,10 +84,10 @@
         </ul>
         
         <div class="ad">
-        ¿¿Sabias que tenemos ofertas solo para registrados?? ¡¡¡Aprovecha!!
+            ¿¿Sabias que tenemos ofertas solo para registrados?? ¡¡¡Aprovecha!!
         </div>
         <div class="ad">
-        ¡¡¡Aprovecha esta increible oportunidad para registrarte!!!
+            ¡¡¡Aprovecha esta increible oportunidad para registrarte!!!
         </div>
         <div class="ad">
             ¡¡¡Si te registras hoy 20% en el siguiente producto!!! 
@@ -98,47 +98,76 @@
     <main>
         <div class="main">
             <div class="registro">
-                    <h1>SignUp</h1>
-                    <br>
-                    <label for="Nombre"></label>
-                    <input name="Nombre" id="Nombre" type="text" placeholder="Nombre" required><label for="Nombre"></label>
-                    <br>
-                    <br>
-                    <label for="Nombre de Usuario"></label>
-                    <input name="Nombre de Usuario" id="Nombre de Usuario" type="text" placeholder="Nombre de Usuario" required><label for="Nombre de Usuario"></label>
-                    <br>
-                    <br>
-                    <label for="date">Año de nacimiento</label>
-                    <br>
-                    <input type="date" name="date" id="date">
-                    <br>
-                    <br>
-                    <label for="radio">Genero</label>
-                    <br>
-                    <input type="radio" name="radio" value="masculino" id="radio"> Masculino
+                <h1><i class="bi bi-person-plus-fill"></i> Registro</h1>
+                
+                <form id="registroForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre"><i class="bi bi-person"></i> Nombre Completo</label>
+                            <input name="nombre" id="nombre" type="text" placeholder="Ingresa tu nombre completo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="usuario"><i class="bi bi-at"></i> Nombre de Usuario</label>
+                            <input name="usuario" id="usuario" type="text" placeholder="Elige un usuario" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fecha"><i class="bi bi-calendar"></i> Fecha de Nacimiento</label>
+                            <input type="date" name="fecha" id="fecha" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tel"><i class="bi bi-telephone"></i> Teléfono</label>
+                            <input type="tel" name="tel" id="tel" placeholder="123 456 789" pattern="[0-9]{9}" maxlength="9" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="bi bi-gender-ambiguous"></i> Género</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="genero" value="masculino" required>
+                                <span>Masculino</span>
+                            </label>
+                            
+                            <label class="radio-label">
+                                <input type="radio" name="genero" value="femenino">
+                                <span>Femenino</span>
+                            </label>
+                            
+                            <label class="radio-label">
+                                <input type="radio" name="genero" value="otro">
+                                <span>Otro</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contraseña"><i class="bi bi-lock"></i> Contraseña</label>
+                        <input name="contraseña" id="contraseña" type="password" placeholder="Mínimo 8 caracteres" minlength="8" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmar-contraseña"><i class="bi bi-shield-lock"></i> Confirmar Contraseña</label>
+                        <input name="confirmar-contraseña" id="confirmar-contraseña" type="password" placeholder="Repite tu contraseña" minlength="8" required>
+                    </div>
+
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="check" id="check" required>
+                        <label for="check">Acepto los <a href="./aviso-legal.html">términos y condiciones</a></label>
+                    </div>
                     
-                    <input type="radio" name="radio" value="femenino" id="radio"> Femenino
+                    <button type="submit" class="btn-submit">
+                        <i class="bi bi-check-circle"></i> Crear Cuenta
+                    </button>
                     
-                    <input type="radio" name="radio" value="otro" id="radio"> Otro
-                    <br>
-                    <br>
-                    <label for="tel"></label>
-                    <input type="tel" name="tel" id="tel" placeholder="Num. teléfono" pattern="[0-9]{9}" maxlength="9" required>
-                    <br>
-                    <br>
-                    <label for="Contraseña"></label>
-                    <input name="Contraseña" id="Contraseña" type="text" placeholder="Contraseña" required><label for="Contraseña"></label>
-                    <br>
-                    <br>
-                    <p>Recordar <input type="checkbox" name="check" id="check"><label for="check"></label>
-                    </p>
-                    <br>
-                    <input name="Submit" type="submit" value="Submit">
-                    <br>
-                    <br>
-                    <nav>
-                        <p style="color: blue;"><a href="login.html">¿Ya tienes cuenta?</a></p>
+                    <nav class="registro-footer">
+                        <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
                     </nav>
+                </form>
             </div>
 
         </div>
@@ -153,6 +182,20 @@
             <a href="./cookies.html"><b>Cookies</b></a>
         </nav>
     </footer>
+
+    <script>
+        // Validación de contraseñas
+        document.getElementById('registroForm').addEventListener('submit', function(e) {
+            const password = document.getElementById('contraseña').value;
+            const confirmPassword = document.getElementById('confirmar-contraseña').value;
+            
+            if (password !== confirmPassword) {
+                e.preventDefault();
+                alert('Las contraseñas no coinciden. Por favor, verifica e intenta nuevamente.');
+                document.getElementById('confirmar-contraseña').focus();
+            }
+        });
+    </script>
 
 </body>
 </html>
