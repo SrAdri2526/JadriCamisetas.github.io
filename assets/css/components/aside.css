@@ -16,6 +16,8 @@ aside {
     width: 90%;
     min-height: 100px;
 
+    font-weight: 700;
+
     padding: 1rem;
     border-radius: 5px;
     min-width: 200px;

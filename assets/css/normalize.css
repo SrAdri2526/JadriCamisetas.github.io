@@ -9,6 +9,13 @@
   --color-gris: #9ca3af;
   --color-error: #ef4444;
   --color-exito: #10b981;
+    --verde-principal: #1E7F43;   /* Verde césped intenso */
+  --verde-secundario: #2ECC71; /* Verde fresco / acento */
+  --verde-oscuro: #145A32;     /* Verde profundo (headers, footer) */
+  --verde-claro: #D5F5E3;
+  --blanco: #FFFFFF;           /* Texto sobre verde oscuro */
+  --gris-claro: #F4F6F6;       /* Background general */
+  --gris-oscuro: #2C2C2C; 
 }
 
 *, *::before, *::after {
