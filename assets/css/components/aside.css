@@ -64,6 +64,10 @@ aside {
     font-weight: bold;
 }
 
+ul {
+  color: white;
+}
+
 
 /* Estilo general del contenedor de suscripción */
 .rss-container {
