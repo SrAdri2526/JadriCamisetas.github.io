@@ -12,7 +12,7 @@ aside {
     background-color: var(--color-blanco);
     color: var(--color-principal);
 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: sans-serif;
     width: 90%;
     min-height: 100px;
 
